@@ -1,4 +1,4 @@
-# DraftPen
+# Draftpen
 
 A beautiful platform for sharing atomic essays, built with Next.js, Tailwind CSS, and shadcn/ui.
 
