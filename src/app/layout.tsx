@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { Fraunces } from "next/font/google";
 import { Nav } from "@/components/nav";
+import { Footer } from "@/components/footer";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className="antialiased bg-[#F5F7FA] min-h-screen">
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );
