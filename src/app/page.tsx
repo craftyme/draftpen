@@ -1,19 +1,34 @@
 "use client";
 
 import Image from "next/image";
+import config from "@/config/config";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center py-16">
+    <div className="flex flex-col items-center pt-[56px]">
+      {/* Hero Section */}
+      <div className="w-full bg-white border-b border-zinc-200/80">
+        <div className="max-w-3xl mx-auto px-6 py-20">
+          <div className="text-center space-y-6">
+            <h1 className="font-fraunces text-[#2F363F] font-black text-4xl tracking-tight">
+              Turn Your Thoughts Into Shareable One-Page Essays
+            </h1>
+            <p className="text-zinc-500 text-lg max-w-2xl mx-auto leading-relaxed">
+              {config.description}
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Main Content */}
-      <article className="w-full max-w-3xl mx-auto px-6 mt-8">
+      <article className="w-full max-w-3xl mx-auto px-6 py-16">
         <div className="bg-white shadow-sm overflow-hidden rounded-sm">
           <div className="p-20">
-            <h1 className="text-[#2F363F] text-2xl font-medium tracking-tight mb-2">
+            <h2 className="text-[#2F363F] text-2xl font-medium tracking-tight mb-2">
               Digital Warm Up
-            </h1>
+            </h2>
             <div className="flex items-center gap-4 text-sm text-gray-500 mb-10">
-              <time>Nov 9, 2024</time>
+              <time>Jan 3, 2025</time>
               <span className="text-gray-300">·</span>
               <span>ALICANTE, SPAIN</span>
             </div>
