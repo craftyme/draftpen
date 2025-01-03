@@ -1,6 +1,6 @@
 # Draftpen
 
-A beautiful platform for crafting and sharingbeautiful one-page essays, built with Next.js, Tailwind CSS, and shadcn/ui.
+A platform for crafting and sharing beautiful one-page essays, built with Next.js, Tailwind CSS, and shadcn/ui.
 
 ## Features
 
