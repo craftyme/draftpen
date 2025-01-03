@@ -1,34 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { CheckIcon } from "lucide-react";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center py-16">
-      {/* Logo and Navigation */}
-      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-10">
-        <div className="container mx-auto px-6 py-4 flex justify-between items-center max-w-6xl">
-          <div className="flex items-center space-x-2">
-            <div className="w-6 h-6 bg-[#3478F6] rounded-lg flex items-center justify-center">
-              <CheckIcon className="w-4 h-4 text-white" />
-            </div>
-            <span className="text-[#2F363F] font-medium">DraftPen</span>
-          </div>
-          <div className="flex space-x-8 text-sm text-gray-600">
-            <a href="#" className="hover:text-[#3478F6] transition-colors">
-              Features
-            </a>
-            <a href="#" className="hover:text-[#3478F6] transition-colors">
-              Support
-            </a>
-            <a href="#" className="hover:text-[#3478F6] transition-colors">
-              Blog
-            </a>
-          </div>
-        </div>
-      </nav>
-
       {/* Main Content */}
       <article className="w-full max-w-3xl mx-auto px-6 mt-8">
         <div className="bg-white shadow-sm overflow-hidden rounded-sm">

@@ -17,6 +17,9 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        fraunces: ["var(--font-fraunces)"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

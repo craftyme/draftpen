@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
+import { Fraunces } from "next/font/google";
+import { Nav } from "@/components/nav";
 import "./globals.css";
 
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  weight: ["900"],
+  variable: "--font-fraunces",
+});
+
 export const metadata: Metadata = {
-  title: "DraftPen - Beautiful Essays",
+  title: "Draftpen - Beautiful Essays",
   description: "Share your thoughts in beautifully crafted essays",
 };
 
@@ -14,8 +21,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={GeistSans.className}>
-      <body className="antialiased bg-[#F5F7FA] min-h-screen">{children}</body>
+    <html lang="en" className={`${GeistSans.className} ${fraunces.variable}`}>
+      <body className="antialiased bg-[#F5F7FA] min-h-screen">
+        <Nav />
+        {children}
+      </body>
     </html>
   );
 }
