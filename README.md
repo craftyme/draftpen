@@ -1,17 +1,17 @@
 # Draftpen
 
-A beautiful platform for sharing atomic essays, built with Next.js, Tailwind CSS, and shadcn/ui.
+A beautiful platform for crafting and sharingbeautiful one-page essays, built with Next.js, Tailwind CSS, and shadcn/ui.
 
 ## Features
 
-- Clean, minimalist design inspired by Things
+- Clean, minimalist design
 - Responsive layout
 - Beautiful typography with Geist font
 - Modern tech stack
 
 ## Tech Stack
 
-- Next.js 14
+- Next.js 15
 - TypeScript
 - Tailwind CSS
 - shadcn/ui components
