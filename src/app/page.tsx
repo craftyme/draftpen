@@ -1,97 +1,116 @@
+"use client";
+
 import Image from "next/image";
-import { CalendarIcon } from "lucide-react";
+import { CheckIcon } from "lucide-react";
 
 export default function Home() {
   return (
-    <article className="bg-white rounded-lg shadow-sm overflow-hidden">
-      <div className="p-8">
-        <h1 className="text-2xl font-semibold text-gray-900 mb-2">
-          Code is no longer a moat
-        </h1>
-        <div className="flex items-center text-sm text-gray-500 mb-6">
-          <CalendarIcon className="h-4 w-4 mr-2" />
-          <time>Sept 3, 2024</time>
-        </div>
-
-        <div className="prose prose-gray max-w-none">
-          <p className="text-gray-600 mb-4">
-            I've been using Cursor for about six months. It's been a pretty
-            insane experience.
-          </p>
-
-          <p className="text-gray-600 mb-4">
-            It led me to a few key conclusions:
-          </p>
-
-          <p className="text-gray-600 mb-6">
-            Building software is not a real moat anymore.
-          </p>
-
-          <p className="text-gray-600 mb-6">
-            If you're building a startup today, your real moats are in the Three
-            D's: Data, Distribution, and Design.
-          </p>
-
-          <div className="pl-6 border-l-2 border-blue-400 mb-6">
-            <ul className="space-y-2">
-              <li className="text-gray-600">
-                Data: How well you understand your users and their behavior.
-              </li>
-              <li className="text-gray-600">
-                Distribution: Your unique way of reaching and connecting with
-                customers.
-              </li>
-              <li className="text-gray-600">
-                Design: Your taste and craftsmanship.
-              </li>
-            </ul>
+    <div className="flex flex-col items-center py-16">
+      {/* Logo and Navigation */}
+      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-10">
+        <div className="container mx-auto px-6 py-4 flex justify-between items-center max-w-6xl">
+          <div className="flex items-center space-x-2">
+            <div className="w-6 h-6 bg-[#3478F6] rounded-lg flex items-center justify-center">
+              <CheckIcon className="w-4 h-4 text-white" />
+            </div>
+            <span className="text-[#2F363F] font-medium">DraftPen</span>
           </div>
-
-          <p className="text-gray-600 mb-6">
-            Everyone will be able to build anything they want soon enough, but
-            the Three D's? It needs time to work on and develop. Start focusing
-            on them if you want to stand out.
-          </p>
-
-          <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
-            The rise of "Personal Apps"
-          </h2>
-
-          <p className="text-gray-600 mb-6">
-            There are 26.3 million software developers today, which will grow
-            exponentially in the coming years. We're heading toward a world
-            where if you ever need a super specific app for yourself, it will be
-            easier to build one rather than find one. We'll see a new landscape
-            filled with tons of apps, each with only one or a few active users.
-          </p>
-
-          <p className="text-gray-600 mb-6">
-            The future belongs to builders and solvers.
-          </p>
-
-          <p className="text-gray-600">
-            If you're someone who loves to build, the future is yours to take.
-            AI will eliminate some jobs that are mostly 'busywork,' but it will
-            make it easier for builders to create value. The market rewards
-            those who solve problems, and AI is your golden ticket to finding
-            solutions to these problems
-          </p>
-        </div>
-
-        <div className="mt-8 pt-8 border-t border-gray-100 flex items-center">
-          <Image
-            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-            alt="Author avatar"
-            width={40}
-            height={40}
-            className="rounded-full"
-          />
-          <div className="ml-3">
-            <p className="text-sm font-medium text-gray-900">Shane Levine</p>
-            <p className="text-sm text-gray-500">Founder at Turbo</p>
+          <div className="flex space-x-8 text-sm text-gray-600">
+            <a href="#" className="hover:text-[#3478F6] transition-colors">
+              Features
+            </a>
+            <a href="#" className="hover:text-[#3478F6] transition-colors">
+              Support
+            </a>
+            <a href="#" className="hover:text-[#3478F6] transition-colors">
+              Blog
+            </a>
           </div>
         </div>
-      </div>
-    </article>
+      </nav>
+
+      {/* Main Content */}
+      <article className="w-full max-w-3xl mx-auto px-6 mt-8">
+        <div className="bg-white shadow-sm overflow-hidden rounded-sm">
+          <div className="p-20">
+            <h1 className="text-[#2F363F] text-2xl font-medium tracking-tight mb-2">
+              Digital Warm Up
+            </h1>
+            <div className="flex items-center gap-4 text-sm text-gray-500 mb-10">
+              <time>Nov 9, 2024</time>
+              <span className="text-gray-300">·</span>
+              <span>ALICANTE, SPAIN</span>
+            </div>
+
+            <div className="prose prose-gray max-w-none">
+              <p className="text-gray-600 leading-relaxed mb-8">
+                I've realized that even when working on projects I'm passionate
+                about, I need a digital warm-up period. This discovery came from
+                my recent increased focus on coding.
+              </p>
+
+              <p className="text-gray-600 leading-relaxed mb-8">
+                Sometimes, grasping the big picture requires significant mental
+                resources, and this is when my brain tends to seek diversions.
+                However, I've noticed an interesting pattern in my work habits.
+              </p>
+
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Instead of completely avoiding work, I find myself gravitating
+                toward smaller, still valuable tasks:
+              </p>
+
+              <ul className="space-y-3 mb-10 ml-4">
+                <li className="text-gray-700 flex items-start">
+                  <span className="text-[#3478F6] mr-2">•</span>
+                  Organizing project files and documentation
+                </li>
+                <li className="text-gray-700 flex items-start">
+                  <span className="text-[#3478F6] mr-2">•</span>
+                  Cleaning up code and removing redundancies
+                </li>
+                <li className="text-gray-700 flex items-start">
+                  <span className="text-[#3478F6] mr-2">•</span>
+                  Completing small, manageable tasks
+                </li>
+              </ul>
+
+              <p className="text-gray-600 leading-relaxed mb-8">
+                These activities create a sense of accomplishment and progress,
+                effectively tricking my brain into a productive mindset. After
+                this warm-up period, I naturally transition into the main
+                project, often achieving a flow state that lasts for 2-3 hours
+                of focused work.
+              </p>
+
+              <p className="text-gray-600 leading-relaxed">
+                What I've come to understand is that the actual coding isn't the
+                challenging part. The real complexity lies in the mental
+                compilation process—organizing thoughts and concepts before
+                translating them into prompts or actual code.
+              </p>
+            </div>
+
+            <div className="mt-10 flex items-center">
+              <div className="w-10 h-10 rounded-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  alt="Author avatar"
+                  width={40}
+                  height={40}
+                  className="object-cover"
+                />
+              </div>
+              <div className="ml-3">
+                <p className="text-[#2F363F] text-sm font-medium">
+                  Tomas Laurinavicius
+                </p>
+                <p className="text-gray-500 text-sm">Partner at Craftled</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
   );
 }
