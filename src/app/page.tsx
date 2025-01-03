@@ -20,15 +20,16 @@ export default function Home() {
 
             <div className="prose prose-gray max-w-none">
               <p className="text-gray-600 leading-relaxed mb-8">
-                I've realized that even when working on projects I'm passionate
-                about, I need a digital warm-up period. This discovery came from
-                my recent increased focus on coding.
+                I&apos;ve realized that even when working on projects I&apos;m
+                passionate about, I need a digital warm-up period. This
+                discovery came from my recent increased focus on coding.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-8">
                 Sometimes, grasping the big picture requires significant mental
                 resources, and this is when my brain tends to seek diversions.
-                However, I've noticed an interesting pattern in my work habits.
+                However, I&apos;ve noticed an interesting pattern in my work
+                habits.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-6">
@@ -60,10 +61,10 @@ export default function Home() {
               </p>
 
               <p className="text-gray-600 leading-relaxed">
-                What I've come to understand is that the actual coding isn't the
-                challenging part. The real complexity lies in the mental
-                compilation process—organizing thoughts and concepts before
-                translating them into prompts or actual code.
+                What I&apos;ve come to understand is that the actual coding
+                isn&apos;t the challenging part. The real complexity lies in the
+                mental compilation process—organizing thoughts and concepts
+                before translating them into prompts or actual code.
               </p>
             </div>
 
