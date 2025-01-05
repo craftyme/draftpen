@@ -85,8 +85,8 @@ export default function Home() {
             <div className="mt-10 flex items-center">
               <div className="w-10 h-10 rounded-full overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                  alt="Author avatar"
+                  src="https://tomaslau.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftomaslau.5be54a25.jpg&w=96&q=75"
+                  alt="Tomas Laurinavicius"
                   width={40}
                   height={40}
                   className="object-cover"
