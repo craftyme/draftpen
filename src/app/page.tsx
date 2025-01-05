@@ -29,7 +29,6 @@ export default function Home() {
             </h2>
             <div className="flex items-center gap-4 text-sm text-gray-500 mb-10">
               <time>Jan 3, 2025</time>
-              <span className="text-gray-300">·</span>
               <span>ALICANTE, SPAIN</span>
             </div>
 
@@ -52,16 +51,16 @@ export default function Home() {
                 toward smaller, still valuable tasks:
               </p>
 
-              <ul className="space-y-3 mb-10 ml-4">
-                <li className="text-gray-700 flex items-start">
+              <ul className="mb-10 space-y-1 -ml-5">
+                <li className="text-gray-700 flex">
                   <span className="text-[#3478F6] mr-2">•</span>
                   Organizing project files and documentation
                 </li>
-                <li className="text-gray-700 flex items-start">
+                <li className="text-gray-700 flex">
                   <span className="text-[#3478F6] mr-2">•</span>
                   Cleaning up code and removing redundancies
                 </li>
-                <li className="text-gray-700 flex items-start">
+                <li className="text-gray-700 flex">
                   <span className="text-[#3478F6] mr-2">•</span>
                   Completing small, manageable tasks
                 </li>
