@@ -102,16 +102,16 @@ export default function Home() {
               </p>
 
               <ul className="mb-10 space-y-1 -ml-5">
-                <li className="text-gray-700 flex">
-                  <span className="text-[#3478F6] mr-2">•</span>
+                <li className="text-gray-600 flex">
+                  <span className="text-gray-600 mr-2">•</span>
                   Organizing project files and documentation
                 </li>
-                <li className="text-gray-700 flex">
-                  <span className="text-[#3478F6] mr-2">•</span>
+                <li className="text-gray-600 flex">
+                  <span className="text-gray-600 mr-2">•</span>
                   Cleaning up code and removing redundancies
                 </li>
-                <li className="text-gray-700 flex">
-                  <span className="text-[#3478F6] mr-2">•</span>
+                <li className="text-gray-600 flex">
+                  <span className="text-gray-600 mr-2">•</span>
                   Completing small, manageable tasks
                 </li>
               </ul>
