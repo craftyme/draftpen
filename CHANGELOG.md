@@ -5,6 +5,17 @@ All notable changes to Draftpen will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.3] - 2025-01-07
+
+### Added
+- Export functionality for PNG and PDF formats
+- Subtle SaaS-style export buttons below essay content
+
+### Changed
+- Unified text colors for better consistency
+- Updated bullet points styling to match content color
+- Refined list item spacing and indentation
+
 ## [0.1.2] - 2025-01-03
 
 ### Changed
