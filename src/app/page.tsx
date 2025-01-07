@@ -78,7 +78,7 @@ export default function Home() {
               Digital Warm Up
             </h2>
             <div className="flex items-center gap-4 text-sm text-gray-500 mb-10">
-              <time>Jan 3, 2025</time>
+              <time>Jan 7, 2025</time>
               <span>ALICANTE, SPAIN</span>
             </div>
 
