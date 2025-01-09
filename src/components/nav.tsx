@@ -21,11 +21,11 @@ export function Nav() {
           >
             Changelog
           </Link>
-          <a href="#" className="hover:text-[#3478F6] transition-colors">
+          <a
+            href="mailto:support@draftpen.com"
+            className="hover:text-[#3478F6] transition-colors"
+          >
             Support
-          </a>
-          <a href="#" className="hover:text-[#3478F6] transition-colors">
-            Blog
           </a>
         </div>
       </div>
