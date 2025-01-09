@@ -150,8 +150,8 @@ export function Footer() {
           {/* Original Footer Content */}
           <div className="flex justify-between items-center">
             <div className="text-sm text-zinc-400">
-              {copyrightYears} © Draftpen - A platform for crafting beautiful
-              one-page essays. Standing on the shoulders of giants.
+              {copyrightYears} © Draftpen - Craft shareable one-page essays.
+              Standing on the shoulders of giants.
             </div>
             <div className="flex items-center gap-2">
               <span className="text-sm text-zinc-400">Built by</span>
