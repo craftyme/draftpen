@@ -1,6 +1,6 @@
 # Draftpen
 
-Draftpen is a browser-based tool for creating and editing professional-quality visual assets, focusing on screenshot beautification, code snippets, tweet captures, and LinkedIn carousels.
+Draftpen is a visual editor for creating and editing professional-quality visual assets, focusing on screenshot beautification, code snippets, tweet captures, and LinkedIn carousels.
 
 ## Features
 
@@ -23,8 +23,8 @@ Draftpen is a browser-based tool for creating and editing professional-quality v
 First, clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/yourusername/pixel-perfect.git
-cd pixel-perfect
+git clone https://github.com/craftyme/draftpen.git
+cd draftpen
 npm install
 ```
 
