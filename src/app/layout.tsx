@@ -1,43 +1,39 @@
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
-import { Fraunces } from "next/font/google";
-import { Nav } from "@/components/nav";
-import { Footer } from "@/components/footer";
-import config from "@/config/config";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme/ThemeProvider";
 
-const fraunces = Fraunces({
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
-  weight: ["900"],
-  variable: "--font-fraunces",
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: config.title,
-  description: config.description,
-  openGraph: {
-    title: config.title,
-    description: config.description,
-    type: "website",
-  },
-  twitter: {
-    title: config.title,
-    description: config.description,
-    card: "summary_large_image",
-  },
+  title: "Draftpen - Create Beautiful Visual Content",
+  description: "Create beautiful screenshots, code snippets, essays, and social proof assets",
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html lang="en" className={`${GeistSans.className} ${fraunces.variable}`}>
-      <body className="antialiased bg-[#F5F7FA] min-h-screen">
-        <Nav />
-        {children}
-        <Footer />
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <ThemeProvider 
+          defaultTheme="system" 
+          storageKey="draftpen-theme"
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

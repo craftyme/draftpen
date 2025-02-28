@@ -1,17 +1,118 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-  }
+@plugin "tailwindcss-animate";
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 0 0% 100%;
-  }
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
 }
 
 @layer base {
@@ -23,27 +124,39 @@
   }
 }
 
-.prose {
-  max-width: 65ch;
-  line-height: 1.75;
+/* Navigation Styles */
+.main-tabs {
+  @apply overflow-hidden;
 }
 
-.prose h1 {
-  @apply text-2xl font-semibold mt-8 mb-4;
+.main-tabs [data-state="active"] {
+  @apply bg-white dark:bg-gray-800 shadow-sm;
+  transition: all 0.2s ease;
 }
 
-.prose h2 {
-  @apply text-xl font-semibold mt-8 mb-4;
+.main-tabs [data-state="inactive"] {
+  @apply text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200;
+  transition: all 0.2s ease;
 }
 
-.prose p {
-  @apply mb-4 text-gray-600;
+.main-tabs .icon-nav {
+  @apply flex items-center gap-1.5 px-3 py-1.5 rounded-md;
 }
 
-.prose ul {
-  @apply list-disc list-inside mb-4;
+.dark .nav-backdrop {
+  background-color: rgba(30, 30, 30, 0.7);
+  backdrop-filter: blur(8px);
+  border-color: rgba(82, 82, 82, 0.15);
 }
 
-.prose li {
-  @apply mb-2;
+.nav-backdrop {
+  background-color: rgba(250, 250, 250, 0.7);
+  backdrop-filter: blur(8px);
+  border-color: rgba(229, 231, 235, 0.8);
+}
+
+/* Noise background effect */
+.bg-noise {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAABQJJREFUaEPtmttx2zAQRbkS3IEriBpQGkhaSCpIOlAaSBqIO1AaSAVxB6c9nJVJkSAJPkDKsj8yYw8J7N49u8vHsj4d6bg8CWT+YZEQKnLUVvkIPGLGfBf7aYn8FsA7+N4Y+Fqq0QlrTviGZpbxXkZYsY/Akpx1ZAXmmfMeOWIGNlLAQG0yLPH+gO/IZcbF+fmRHRjTKvPAgJQ45bBvlMOjxkUHYM8ht5isCjOEjn/g814Z2I8AjrUTf4Pr8/0+a2O+i/1UI87BH4L4BeYBfrHJpIRTn2GWVvdVGR+ZoSJfyQj8qJV1nxoXVcWq1TyFKTFZeJAiVwCXCOqCqLN75w1XrN+/YbKnVJ06VmXcTJZ6UgHOUYmTq8g/EGw5sFZmXPpEBRl/QVWojDLnIwH5kOqLTNkScfZ8xfXMZGiWyjMZt+WICpg7yFMY92tciH1zeFDGxbQMI/xpCUzS1y5D03zTwZJDxg14lGf4nk+y31eAadGiBdBVSZspT+lSzA1lmTsYl4EWkK2TIaecxI9jGX/F7wsuGBPAmBvADJ15qyVh03HAXRGGUaS0rz9y7H0D8hOOp7Sp1YeydpLr0FDmDO+mhGVj2Jdl2LrDMqbNDy2A6fS9oiJ17EYKQRHzrJ1NwlHsNJ3BvR57+yCZI3SuOQfvVGQA8IMUTXKm9JJjoEwbjkAZRyPbGZ7tgGkaAMsA8CwF9DK9gW22+bI6bAbm2UZJ28YFLX9tXC+q4zbHyFnvIzqcLXJmbOV4sDOuZ56tcY+jZVhqBbRmrjMnTZz/Yni2kIxL6mXgBGZszS4ELyOKtVGUiWOMWysqbwE7MpYxY19gNmDe2IZLYx1iYM8u1mDK4KgSS3lcVe2bE3aV6VUZzRRWpFoKNjXEZbS151fmrJFB7Y8tjZhFKa0t0j4ZlvtRLzCSGWDM5mK7Ryu89AY3nDO3I2W06hPeZZoxV8SLg7OQkTJfZMbPt40kq7Rl1BLhfQSfHCmjcVlsxNu6lEH7y3O8DUcBfVGF2rVNwU2i2yWzMqN/cLCGp2d1aXOsqCbz9H09i6nGLuqD28WpZTqnMqMvB07MsFx5X6mB4Z2k8xWzLhSYLJPpjHdJ6Y+D8P2eJJ8fMPtg/Y/1XR7FYM0uMONWI6PXIa/OhBmYXl3D3Ld6zdCYnJw9sxRcwLjlGy7TsHJlLZ6ZNmtgKtM8/m4rp78qwh3OeOobbcm4szuZ14whhlZ+VWqsEVbEzI4WA9JNh8pgv2j6lc0UOZJoS8a9BqOmGTkgHm2RLbA6f29J8KiD92XOo0xqX1ERd4yh0mFnqUTKw+SWYOXKYM+6NpZhmVNxlvddjG1FaP04NRlR+UtB+ZaZyph3+vT1UmNUxNnbvzA2d+Nxqkwmw6vNMVaxrJsZHw2ZIb4M5gqPmw2PGxmFMrpZOmY6lXH/RpAqmXuWRUcldKwi3uMFiCpzX2JbxhUV6CjRjXFMkciIU4oMGCmxpGkZV6wV+z4Eo2UOkmmK/O9VeYPnlXE78jZLRleVgpHgV+Z9e9YuS0Z7qO9XlQn8sGjcxsWybHsF0rPITLVk8m18vFG1XZvJBWs9Z6Ulo9cWd23JaMneWzI6S39bMsrw/QHu8HO8PBq/kgAAAABJRU5ErkJggg==");
+  opacity: 0.5;
 }
