@@ -10,7 +10,8 @@ import {
   FileText, 
   Layers, 
   Award, 
-  Sparkles
+  Sparkles,
+  Palette
 } from 'lucide-react';
 
 interface MainLayoutProps {
@@ -20,7 +21,7 @@ interface MainLayoutProps {
 
 const MainLayout = ({ children, activeTab }: MainLayoutProps) => {
   return (
-    <div className="flex flex-col h-screen overflow-hidden">
+    <div className="flex flex-col h-screen">
       <header className="py-2 px-4 border-b flex items-center justify-between nav-backdrop sticky top-0 z-50 h-[60px] shrink-0">
         <Link href="/" className="flex items-center gap-2">
           <svg width="24" height="24" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -100,6 +101,16 @@ const MainLayout = ({ children, activeTab }: MainLayoutProps) => {
                 <span className="text-xs font-normal">Changelog</span>
               </Link>
             </TabsTrigger>
+            <TabsTrigger 
+              value="style-guide" 
+              asChild 
+              className="h-7 rounded transition-all"
+            >
+              <Link href="/style-guide" className="icon-nav">
+                <Palette className="h-4 w-4" aria-label="Style Guide icon" />
+                <span className="text-xs font-normal">Style Guide</span>
+              </Link>
+            </TabsTrigger>
           </TabsList>
         </Tabs>
         <div className="flex items-center gap-3">
@@ -115,7 +126,7 @@ const MainLayout = ({ children, activeTab }: MainLayoutProps) => {
           </a>
         </div>
       </header>
-      <main className="flex-1 overflow-hidden">
+      <main className="flex-1 overflow-auto">
         {children}
       </main>
       <footer className="py-2 px-4 border-t flex items-center justify-between flex-wrap gap-2 text-xs text-[#86868b] dark:text-gray-400 font-light shrink-0">

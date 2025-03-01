@@ -1,0 +1,67 @@
+/**
+ * Draftpen Design Tokens
+ * 
+ * This file contains all the design tokens used throughout the application.
+ * Use these variables rather than hardcoded values to maintain consistency.
+ */
+
+:root {
+  /* Colors */
+  --color-primary: #0071e3;        /* Apple Blue */
+  --color-background: #f5f5f7;     /* Light Gray */
+  --color-dark: #1d1d1f;           /* Dark Gray */
+  --color-text-secondary: #86868b; /* Text Gray */
+
+  /* Typography */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  
+  --font-size-xs: 0.75rem;   /* 12px */
+  --font-size-sm: 0.875rem;  /* 14px */
+  --font-size-base: 1rem;    /* 16px */
+  --font-size-lg: 1.125rem;  /* 18px */
+  --font-size-xl: 1.25rem;   /* 20px */
+  --font-size-2xl: 1.5rem;   /* 24px */
+  --font-size-3xl: 1.875rem; /* 30px */
+  --font-size-4xl: 2.25rem;  /* 36px */
+
+  /* Spacing */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-8: 2rem;     /* 32px */
+  --space-12: 3rem;    /* 48px */
+  --space-16: 4rem;    /* 64px */
+
+  /* Borders */
+  --border-radius-sm: 0.125rem; /* 2px */
+  --border-radius-md: 0.25rem;  /* 4px */
+  --border-radius-lg: 0.5rem;   /* 8px */
+  --border-radius-xl: 0.75rem;  /* 12px */
+  --border-radius-2xl: 1rem;    /* 16px */
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  
+  /* Transitions */
+  --transition-fast: 150ms;
+  --transition-normal: 250ms;
+  --transition-slow: 350ms;
+  --transition-timing: cubic-bezier(0.25, 0.1, 0.25, 1); /* Apple's timing function */
+  
+  /* Cursors */
+  --cursor-clickable: pointer;
+  --cursor-text: text;
+  --cursor-default: default;
+  --cursor-not-allowed: not-allowed;
+}
+
+.dark {
+  --color-background: #1d1d1f;     /* Dark Gray */
+  --color-dark: #f5f5f7;           /* Light Gray inverted for dark mode */
+}
