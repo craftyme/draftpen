@@ -1,4 +1,6 @@
 import { Metadata } from 'next';
+import MainLayout from '@/components/layout/MainLayout';
+import { DocsLayout } from '@/components/docs/DocsLayout';
 
 export const metadata: Metadata = {
   title: 'Style Guide | Draftpen',
@@ -10,5 +12,11 @@ export default function StyleGuideLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <MainLayout activeTab="style-guide">
+      <DocsLayout>
+        {children}
+      </DocsLayout>
+    </MainLayout>
+  );
 }

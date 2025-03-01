@@ -7,6 +7,9 @@ Draftpen is a visual editor for creating and editing professional-quality visual
 - **Screenshot Editor**: Transform plain screenshots into professional-looking assets with frames, shadows, and backgrounds.
 - **Code Image Generator**: Create beautiful, syntax-highlighted code snippets for documentation, social media, or presentations.
 - **Tweet Importer**: Generate clean images of tweets for sharing on other platforms.
+- **Image Tools**: Comprehensive suite of image manipulation tools including resizing, cropping, compression, and more.
+- **PDF Tools**: Convert between PDF and various image formats.
+- **Style Guide**: Interactive documentation of the design system with live examples.
 
 ## Tech Stack
 
@@ -58,9 +61,23 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 4. Adjust padding, border radius, and font size
 5. Download the image or copy to clipboard
 
+### Style Guide
+1. Navigate to `/style-guide` to view the interactive design system documentation
+2. Explore design tokens, components, and utilities
+3. View code examples and live previews for all UI elements
+
 ## Deployment
 
-The easiest way to deploy your PixelPerfect app is to use the [Vercel Platform](https://vercel.com/new). Connect your GitHub repository to Vercel and it will automatically build and deploy your app.
+The easiest way to deploy your Draftpen app is to use the [Vercel Platform](https://vercel.com/new). Connect your GitHub repository to Vercel and it will automatically build and deploy your app.
+
+For manual deployment:
+```bash
+# Build the application
+npm run build
+
+# Start the production server
+npm start
+```
 
 ## License
 
