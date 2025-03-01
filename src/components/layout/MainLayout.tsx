@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ThemeToggle } from '@/components/theme/ThemeToggle';
+import AnnouncementBanner from '@/components/common/AnnouncementBanner';
+import { announcementConfig } from '@/lib/announcement-config';
 import { 
   Github, 
   Image, 
@@ -25,6 +27,18 @@ interface MainLayoutProps {
 const MainLayout = ({ children, activeTab }: MainLayoutProps) => {
   return (
     <div className="flex flex-col h-screen">
+      {announcementConfig.enabled && (
+        <AnnouncementBanner 
+          message={announcementConfig.message}
+          linkText={announcementConfig.linkText}
+          linkUrl={announcementConfig.linkUrl}
+          backgroundColor={announcementConfig.backgroundColor}
+          textColor={announcementConfig.textColor}
+          icon={announcementConfig.icon && <announcementConfig.icon size={16} />}
+          dismissible={announcementConfig.dismissible}
+          storageKey={announcementConfig.storageKey}
+        />
+      )}
       <header className="py-2 px-4 border-b flex items-center justify-between nav-backdrop sticky top-0 z-50 h-[60px] shrink-0">
         <Link href="/" className="flex items-center gap-1">
           <svg width="16" height="16" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
