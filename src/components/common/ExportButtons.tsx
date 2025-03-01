@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Download, Copy } from 'lucide-react';
+import { Download } from 'lucide-react';
 
 interface ExportButtonsProps {
   onExportImage?: () => void;
@@ -9,6 +9,13 @@ interface ExportButtonsProps {
   copyLabel?: string;
   className?: string;
 }
+
+const CopyIcon = () => (
+  <svg width="16px" height="16px" strokeWidth="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor" className="opacity-70">
+    <path d="M19.4 20H9.6C9.26863 20 9 19.7314 9 19.4V9.6C9 9.26863 9.26863 9 9.6 9H19.4C19.7314 9 20 9.26863 20 9.6V19.4C20 19.7314 19.7314 20 19.4 20Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+    <path d="M15 9V4.6C15 4.26863 14.7314 4 14.4 4H4.6C4.26863 4 4 4.26863 4 4.6V14.4C4 14.7314 4.26863 15 4.6 15H9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+  </svg>
+);
 
 const ExportButtons = ({ 
   onExportImage, 
@@ -21,21 +28,21 @@ const ExportButtons = ({
     <div className={className}>
       <Button 
         onClick={onExportImage} 
-        className="flex-1 text-xs font-light" 
+        className="flex-1 text-xs font-light gap-1" 
         variant="secondary"
         size="sm"
         disabled={!onExportImage}
       >
-        <Download className="h-3.5 w-3.5" /> {downloadLabel}
+        <Download className="h-3.5 w-3.5 opacity-70" /> {downloadLabel}
       </Button>
       <Button 
         onClick={onCopyToClipboard} 
-        className="flex-1 text-xs font-light" 
+        className="flex-1 text-xs font-light gap-1" 
         variant="secondary"
         size="sm"
         disabled={!onCopyToClipboard}
       >
-        <Copy className="h-3.5 w-3.5" /> {copyLabel}
+        <CopyIcon /> {copyLabel}
       </Button>
     </div>
   );
