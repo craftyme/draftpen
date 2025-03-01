@@ -23,17 +23,36 @@ const SocialProofLayout = ({
   return (
     <div className="flex flex-col min-h-[calc(100vh-80px)] h-full">
       {/* Secondary Navigation */}
-      <div className="h-[40px] shrink-0 border-b bg-gray-50 dark:bg-gray-900 px-4 flex items-center">
-        <Tabs defaultValue={activeSubTab} className="w-auto">
-          <TabsList className="h-7 bg-transparent">
-            <TabsTrigger value="g2" asChild className="text-xs px-3 py-1 h-7">
+      <div className="h-[40px] shrink-0 border-b nav-backdrop sticky top-0 z-10 px-4 flex items-center">
+        <Tabs defaultValue={activeSubTab} className="w-auto secondary-nav-tabs">
+          <TabsList className="h-8 bg-transparent p-1 rounded-lg">
+            <TabsTrigger 
+              value="g2" 
+              asChild 
+              className="h-6 rounded transition-all text-xs px-3 py-1"
+            >
               <Link href="/social-proof/g2">G2 Review</Link>
             </TabsTrigger>
-            <TabsTrigger value="trustpilot" asChild className="text-xs px-3 py-1 h-7">
+            <TabsTrigger 
+              value="trustpilot" 
+              asChild 
+              className="h-6 rounded transition-all text-xs px-3 py-1"
+            >
               <Link href="/social-proof/trustpilot">Trustpilot</Link>
             </TabsTrigger>
-            <TabsTrigger value="twitter" asChild className="text-xs px-3 py-1 h-7">
-              <Link href="/social-proof/twitter">Twitter</Link>
+            <TabsTrigger 
+              value="capterra" 
+              asChild 
+              className="h-6 rounded transition-all text-xs px-3 py-1"
+            >
+              <Link href="/social-proof/capterra">Capterra</Link>
+            </TabsTrigger>
+            <TabsTrigger 
+              value="testimonial" 
+              asChild 
+              className="h-6 rounded transition-all text-xs px-3 py-1"
+            >
+              <Link href="/social-proof/testimonial">Testimonial</Link>
             </TabsTrigger>
           </TabsList>
         </Tabs>

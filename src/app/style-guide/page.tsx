@@ -274,6 +274,50 @@ export default function StyleGuidePage() {
                     </div>
                   </div>
                 </div>
+
+                <div>
+                  <h4 className="text-sm font-medium mb-4">Tabs</h4>
+                  <div className="space-y-6">
+                    <div>
+                      <p className="text-sm mb-2">Default Tabs</p>
+                      <Tabs defaultValue="tab1" className="w-full">
+                        <TabsList>
+                          <TabsTrigger value="tab1">Tab 1</TabsTrigger>
+                          <TabsTrigger value="tab2">Tab 2</TabsTrigger>
+                          <TabsTrigger value="tab3">Tab 3</TabsTrigger>
+                        </TabsList>
+                        <TabsContent value="tab1" className="p-4 mt-2 border rounded-md">
+                          Tab 1 content
+                        </TabsContent>
+                        <TabsContent value="tab2" className="p-4 mt-2 border rounded-md">
+                          Tab 2 content
+                        </TabsContent>
+                        <TabsContent value="tab3" className="p-4 mt-2 border rounded-md">
+                          Tab 3 content
+                        </TabsContent>
+                      </Tabs>
+                    </div>
+                    
+                    <div>
+                      <p className="text-sm mb-2">Secondary Navigation Tabs</p>
+                      <div className="border-b">
+                        <Tabs defaultValue="tab1" className="w-auto">
+                          <TabsList className="h-8 bg-transparent p-1 rounded-lg">
+                            <TabsTrigger value="tab1" className="h-6 rounded transition-all text-xs px-3 py-1">
+                              First Tab
+                            </TabsTrigger>
+                            <TabsTrigger value="tab2" className="h-6 rounded transition-all text-xs px-3 py-1">
+                              Second Tab
+                            </TabsTrigger>
+                            <TabsTrigger value="tab3" className="h-6 rounded transition-all text-xs px-3 py-1">
+                              Third Tab
+                            </TabsTrigger>
+                          </TabsList>
+                        </Tabs>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </TabsContent>

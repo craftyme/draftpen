@@ -195,6 +195,21 @@ select:disabled,
   font-weight: 400;
 }
 
+/* Secondary Navigation Tabs - Apple-style */
+.secondary-nav-tabs {
+  @apply overflow-hidden;
+}
+
+.secondary-nav-tabs [data-state="active"] {
+  @apply bg-white dark:bg-gray-900 shadow-none;
+  transition: all 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.secondary-nav-tabs [data-state="inactive"] {
+  @apply text-[#86868b] dark:text-gray-400 hover:text-[#1d1d1f] dark:hover:text-gray-200;
+  transition: all 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
 .nav-backdrop {
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(20px);
