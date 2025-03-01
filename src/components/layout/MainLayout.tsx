@@ -24,80 +24,80 @@ const MainLayout = ({ children, activeTab }: MainLayoutProps) => {
       <header className="py-2 px-4 border-b flex items-center justify-between nav-backdrop sticky top-0 z-50 h-[60px] shrink-0">
         <Link href="/" className="flex items-center gap-2">
           <svg width="24" height="24" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fillRule="evenodd" clipRule="evenodd" d="M20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0ZM35 20C35 28.2843 28.2843 35 20 35V5C28.2843 5 35 11.7157 35 20Z" fill="#4A1FB8"/>
+            <path fillRule="evenodd" clipRule="evenodd" d="M20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0ZM35 20C35 28.2843 28.2843 35 20 35V5C28.2843 5 35 11.7157 35 20Z" fill="#0071e3"/>
           </svg>
-          <span className="font-bold text-md">Draftpen</span>
+          <span className="font-medium text-md tracking-tight">Draftpen</span>
         </Link>
         <Tabs defaultValue={activeTab} className="w-auto main-tabs">
-          <TabsList className="h-10 bg-transparent p-1 rounded-lg">
+          <TabsList className="h-9 bg-transparent p-1 rounded-lg">
             <TabsTrigger 
               value="screenshot" 
               asChild 
-              className="h-8 rounded transition-all"
+              className="h-7 rounded transition-all"
             >
               <Link href="/" className="icon-nav">
                 <Image className="h-4 w-4" aria-label="Screenshot icon" />
-                <span className="text-xs">Screenshot</span>
+                <span className="text-xs font-normal">Screenshot</span>
               </Link>
             </TabsTrigger>
             <TabsTrigger 
               value="code" 
               asChild 
-              className="h-8 rounded transition-all"
+              className="h-7 rounded transition-all"
             >
               <Link href="/code" className="icon-nav">
                 <Code className="h-4 w-4" aria-label="Code icon" />
-                <span className="text-xs">Code</span>
+                <span className="text-xs font-normal">Code</span>
               </Link>
             </TabsTrigger>
             <TabsTrigger 
               value="tweet" 
               asChild 
-              className="h-8 rounded transition-all"
+              className="h-7 rounded transition-all"
             >
               <Link href="/tweet" className="icon-nav">
                 <Twitter className="h-4 w-4" aria-label="Twitter icon" />
-                <span className="text-xs">Tweet</span>
+                <span className="text-xs font-normal">Tweet</span>
               </Link>
             </TabsTrigger>
             <TabsTrigger 
               value="essay" 
               asChild 
-              className="h-8 rounded transition-all"
+              className="h-7 rounded transition-all"
             >
               <Link href="/essay" className="icon-nav">
                 <FileText className="h-4 w-4" aria-label="Essay icon" />
-                <span className="text-xs">Essay</span>
+                <span className="text-xs font-normal">Essay</span>
               </Link>
             </TabsTrigger>
             <TabsTrigger 
               value="carousel" 
               asChild 
-              className="h-8 rounded transition-all"
+              className="h-7 rounded transition-all"
             >
               <Link href="/carousel" className="icon-nav">
                 <Layers className="h-4 w-4" aria-label="Carousel icon" />
-                <span className="text-xs">Carousel</span>
+                <span className="text-xs font-normal">Carousel</span>
               </Link>
             </TabsTrigger>
             <TabsTrigger 
               value="social-proof" 
               asChild 
-              className="h-8 rounded transition-all"
+              className="h-7 rounded transition-all"
             >
               <Link href="/social-proof" className="icon-nav">
                 <Award className="h-4 w-4" aria-label="Social Proof icon" />
-                <span className="text-xs">Social Proof</span>
+                <span className="text-xs font-normal">Social Proof</span>
               </Link>
             </TabsTrigger>
             <TabsTrigger 
               value="changelog" 
               asChild 
-              className="h-8 rounded transition-all"
+              className="h-7 rounded transition-all"
             >
               <Link href="/changelog" className="icon-nav">
                 <Sparkles className="h-4 w-4" aria-label="Changelog icon" />
-                <span className="text-xs">Changelog</span>
+                <span className="text-xs font-normal">Changelog</span>
               </Link>
             </TabsTrigger>
           </TabsList>
@@ -108,7 +108,7 @@ const MainLayout = ({ children, activeTab }: MainLayoutProps) => {
             href="https://github.com/craftyme/draftpen" 
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-xs text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
+            className="flex items-center text-xs text-[#86868b] hover:text-[#1d1d1f] dark:text-gray-400 dark:hover:text-gray-200 font-light"
           >
             <Github className="h-4 w-4 mr-1" aria-label="GitHub icon" />
             <span>GitHub</span>
@@ -118,12 +118,12 @@ const MainLayout = ({ children, activeTab }: MainLayoutProps) => {
       <main className="flex-1 overflow-hidden">
         {children}
       </main>
-      <footer className="py-2 px-4 border-t flex items-center justify-between flex-wrap gap-2 text-xs text-gray-500 dark:text-gray-400 shrink-0">
+      <footer className="py-2 px-4 border-t flex items-center justify-between flex-wrap gap-2 text-xs text-[#86868b] dark:text-gray-400 font-light shrink-0">
         <div>
           {new Date().getFullYear()} &copy; Draftpen - Craft beautiful shareable visuals from your content. Standing on the shoulders of giants.
         </div>
         <div className="flex items-center gap-2">
-          <span className="text-xs text-zinc-400">Built by</span>
+          <span className="text-xs text-[#86868b]">Built by</span>
           <div className="flex items-center gap-1">
             <svg width="16" height="16" viewBox="0 0 154 154" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0">
               <rect width="154" height="154" rx="77" fill="#0A0A0A"></rect>
@@ -132,7 +132,7 @@ const MainLayout = ({ children, activeTab }: MainLayoutProps) => {
             <a 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-xs font-medium text-zinc-900 dark:text-zinc-100 hover:text-zinc-700 dark:hover:text-zinc-300" 
+              className="text-xs font-normal text-zinc-900 dark:text-zinc-100 hover:text-zinc-700 dark:hover:text-zinc-300" 
               href="https://craftled.com/"
             >
               Craftled

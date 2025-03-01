@@ -15,25 +15,27 @@ const ExportButtons = ({
   onCopyToClipboard,
   downloadLabel = 'Download',
   copyLabel = 'Copy',
-  className = "flex space-x-2 w-full"
+  className = "flex gap-2 w-full p-3"
 }: ExportButtonsProps) => {
   return (
     <div className={className}>
       <Button 
         onClick={onExportImage} 
-        className="flex-1" 
-        variant="outline"
+        className="flex-1 text-xs font-light" 
+        variant="secondary"
+        size="sm"
         disabled={!onExportImage}
       >
-        <Download className="mr-2 h-4 w-4" /> {downloadLabel}
+        <Download className="h-3.5 w-3.5" /> {downloadLabel}
       </Button>
       <Button 
         onClick={onCopyToClipboard} 
-        className="flex-1" 
-        variant="outline"
+        className="flex-1 text-xs font-light" 
+        variant="secondary"
+        size="sm"
         disabled={!onCopyToClipboard}
       >
-        <Copy className="mr-2 h-4 w-4" /> {copyLabel}
+        <Copy className="h-3.5 w-3.5" /> {copyLabel}
       </Button>
     </div>
   );

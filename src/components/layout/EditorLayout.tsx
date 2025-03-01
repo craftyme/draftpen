@@ -24,12 +24,12 @@ const EditorLayout: React.FC<EditorLayoutProps> = ({
       </div>
       
       {/* Right side - Controls sidebar */}
-      <div className="w-80 border-l bg-white dark:bg-gray-800 flex flex-col min-h-[calc(100vh-80px)]">
+      <div className="w-80 border-l bg-white dark:bg-gray-800 flex flex-col min-h-[calc(100vh-80px)] sidebar">
         <ExportButtons 
           onExportImage={onExport} 
           onCopyToClipboard={onCopy} 
         />
-        <div className="p-3 space-y-3 overflow-y-auto flex-1">
+        <div className="flex-1 overflow-y-auto p-4">
           {ControlPanel}
         </div>
       </div>
