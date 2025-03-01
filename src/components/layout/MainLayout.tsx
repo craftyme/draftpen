@@ -15,6 +15,7 @@ import {
   FileType,
   ImageIcon
 } from 'lucide-react';
+import { ImageToolsIcon } from '@/components/icons/ImageToolsIcon';
 
 interface MainLayoutProps {
   children: React.ReactNode;
@@ -131,6 +132,16 @@ const MainLayout = ({ children, activeTab }: MainLayoutProps) => {
               <Link href="/image-converter" className="icon-nav">
                 <ImageIcon className="h-4 w-4" aria-label="Image Converter icon" />
                 <span className="text-xs font-normal">Image Converter</span>
+              </Link>
+            </TabsTrigger>
+            <TabsTrigger 
+              value="image-tools" 
+              asChild 
+              className="h-7 rounded transition-all"
+            >
+              <Link href="/image-tools" className="icon-nav">
+                <ImageToolsIcon className="h-4 w-4" aria-label="Image Tools icon" />
+                <span className="text-xs font-normal">Image Tools</span>
               </Link>
             </TabsTrigger>
           </TabsList>
