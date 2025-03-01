@@ -11,7 +11,8 @@ import {
   Layers, 
   Award, 
   Sparkles,
-  Palette
+  Palette,
+  FileType
 } from 'lucide-react';
 
 interface MainLayoutProps {
@@ -109,6 +110,16 @@ const MainLayout = ({ children, activeTab }: MainLayoutProps) => {
               <Link href="/style-guide" className="icon-nav">
                 <Palette className="h-4 w-4" aria-label="Style Guide icon" />
                 <span className="text-xs font-normal">Style Guide</span>
+              </Link>
+            </TabsTrigger>
+            <TabsTrigger 
+              value="pdf-tools" 
+              asChild 
+              className="h-7 rounded transition-all"
+            >
+              <Link href="/pdf-tools" className="icon-nav">
+                <FileType className="h-4 w-4" aria-label="PDF Tools icon" />
+                <span className="text-xs font-normal">PDF Tools</span>
               </Link>
             </TabsTrigger>
           </TabsList>
