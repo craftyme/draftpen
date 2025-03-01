@@ -5,7 +5,6 @@ import { ThemeToggle } from '@/components/theme/ThemeToggle';
 import AnnouncementBanner from '@/components/common/AnnouncementBanner';
 import { announcementConfig } from '@/lib/announcement-config';
 import { 
-  Github, 
   Image, 
   Code, 
   Twitter, 
@@ -13,7 +12,6 @@ import {
   Layers, 
   Award, 
   Sparkles,
-  Palette,
   FileType,
   ImageIcon
 } from 'lucide-react';
@@ -119,16 +117,6 @@ const MainLayout = ({ children, activeTab }: MainLayoutProps) => {
               </Link>
             </TabsTrigger>
             <TabsTrigger 
-              value="style-guide" 
-              asChild 
-              className="h-7 rounded transition-all"
-            >
-              <Link href="/style-guide" className="icon-nav">
-                <Palette className="h-4 w-4" aria-label="Style Guide icon" />
-                <span className="text-xs font-normal">Style Guide</span>
-              </Link>
-            </TabsTrigger>
-            <TabsTrigger 
               value="pdf-tools" 
               asChild 
               className="h-7 rounded transition-all"
@@ -162,15 +150,6 @@ const MainLayout = ({ children, activeTab }: MainLayoutProps) => {
         </Tabs>
         <div className="flex items-center gap-3">
           <ThemeToggle />
-          <a 
-            href="https://github.com/craftyme/draftpen" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center text-xs text-[#86868b] hover:text-[#1d1d1f] dark:text-gray-400 dark:hover:text-gray-200 font-light"
-          >
-            <Github className="h-4 w-4 mr-1" aria-label="GitHub icon" />
-            <span>GitHub</span>
-          </a>
         </div>
       </header>
       <main className="flex-1 overflow-auto">
@@ -196,6 +175,19 @@ const MainLayout = ({ children, activeTab }: MainLayoutProps) => {
               Craftled
             </a>
           </div>
+          <span className="mx-2">•</span>
+          <Link href="/style-guide" className="text-xs font-normal hover:text-zinc-700 dark:hover:text-zinc-300">
+            Style Guide
+          </Link>
+          <span className="mx-2">•</span>
+          <a 
+            href="https://github.com/craftyme/draftpen" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs font-normal hover:text-zinc-700 dark:hover:text-zinc-300"
+          >
+            GitHub
+          </a>
         </div>
       </footer>
     </div>
