@@ -11,3 +11,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial release of Draftpen
 - Core image and PDF tools
 - Style guide with design system documentation
+- Dynamic sitemap generation for improved SEO
+- Robots.txt configuration for search engine crawling
