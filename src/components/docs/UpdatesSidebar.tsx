@@ -30,17 +30,12 @@ export function UpdatesSidebar({ className }: UpdatesSidebarProps) {
         const extractedVersions: Version[] = [];
         let match;
 
-        // Add Unreleased first
-        extractedVersions.push({
-          title: 'Unreleased',
-          href: '/updates#unreleased',
-        });
-
         // Extract all versions with dates
         while ((match = versionRegex.exec(content)) !== null) {
           const version = match[1];
           const date = match[2] || '';
           
+          // Skip unreleased section
           if (version.toLowerCase() !== 'unreleased') {
             extractedVersions.push({
               title: version,

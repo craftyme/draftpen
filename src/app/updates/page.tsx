@@ -22,9 +22,9 @@ export default function UpdatesPage() {
   return (
     <div>
       <div className="mb-8">
-        <h1 className="text-3xl font-medium mb-2 tracking-tight">DraftPen Updates</h1>
+        <h1 className="text-3xl font-medium mb-2 tracking-tight">Draftpen Updates</h1>
         <p className="text-lg text-muted-foreground font-light">
-          A chronological record of all notable changes to DraftPen
+          A chronological record of all notable changes to Draftpen
         </p>
       </div>
 
