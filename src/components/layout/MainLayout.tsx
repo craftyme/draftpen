@@ -12,7 +12,8 @@ import {
   Award, 
   Sparkles,
   Palette,
-  FileType
+  FileType,
+  ImageIcon
 } from 'lucide-react';
 
 interface MainLayoutProps {
@@ -120,6 +121,16 @@ const MainLayout = ({ children, activeTab }: MainLayoutProps) => {
               <Link href="/pdf-tools" className="icon-nav">
                 <FileType className="h-4 w-4" aria-label="PDF Tools icon" />
                 <span className="text-xs font-normal">PDF Tools</span>
+              </Link>
+            </TabsTrigger>
+            <TabsTrigger 
+              value="image-converter" 
+              asChild 
+              className="h-7 rounded transition-all"
+            >
+              <Link href="/image-converter" className="icon-nav">
+                <ImageIcon className="h-4 w-4" aria-label="Image Converter icon" />
+                <span className="text-xs font-normal">Image Converter</span>
               </Link>
             </TabsTrigger>
           </TabsList>
