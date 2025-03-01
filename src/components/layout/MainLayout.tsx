@@ -188,6 +188,10 @@ const MainLayout = ({ children, activeTab }: MainLayoutProps) => {
           >
             GitHub
           </a>
+          <span className="mx-2">•</span>
+          <Link href="/updates" className="text-xs font-normal hover:text-zinc-700 dark:hover:text-zinc-300">
+            Updates
+          </Link>
         </div>
       </footer>
     </div>
