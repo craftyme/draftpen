@@ -23,11 +23,11 @@ const MainLayout = ({ children, activeTab }: MainLayoutProps) => {
   return (
     <div className="flex flex-col h-screen">
       <header className="py-2 px-4 border-b flex items-center justify-between nav-backdrop sticky top-0 z-50 h-[60px] shrink-0">
-        <Link href="/" className="flex items-center gap-2">
-          <svg width="20" height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <Link href="/" className="flex items-center gap-1">
+          <svg width="16" height="16" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0ZM35 20C35 28.2843 28.2843 35 20 35V5C28.2843 5 35 11.7157 35 20Z" fill="#0071e3"/>
           </svg>
-          <span className="font-medium text-md tracking-tight">Draftpen</span>
+          <span className="font-medium text-sm tracking-tight">Draftpen</span>
         </Link>
         <Tabs defaultValue={activeTab} className="w-auto main-tabs">
           <TabsList className="h-9 bg-transparent p-1 rounded-lg">
