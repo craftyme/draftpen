@@ -160,6 +160,10 @@ const MainLayout = ({ children, activeTab }: MainLayoutProps) => {
           {new Date().getFullYear()} &copy; Draftpen - Craft beautiful shareable visuals from your content. Standing on the shoulders of giants.
         </div>
         <div className="flex items-center gap-2">
+          <Link href="/tools" className="text-xs font-normal hover:text-zinc-700 dark:hover:text-zinc-300">
+            Tools
+          </Link>
+          <span className="mx-2">•</span>
           <Link href="/style-guide" className="text-xs font-normal hover:text-zinc-700 dark:hover:text-zinc-300">
             Style Guide
           </Link>
